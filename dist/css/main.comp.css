@@ -5,6 +5,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -23,12 +32,31 @@ h3 {
   .content-section__header--h1 {
     font-size: 7rem;
     text-transform: uppercase;
-    letter-spacing: 2rem;
+    letter-spacing: 3rem;
     font-weight: 900;
     color: #FFF; }
+    @media only screen and (max-width: 56.25em) {
+      .content-section__header--h1 {
+        font-size: 5rem;
+        letter-spacing: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__header--h1 {
+        font-size: 4rem;
+        letter-spacing: 1rem; } }
+    @media only screen and (max-width: 25.5em) {
+      .content-section__header--h1 {
+        font-size: 3.5rem;
+        letter-spacing: .5rem; } }
   .content-section__first--h3 {
     font-weight: 600;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    letter-spacing: .15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .content-section__first--h3 {
+        line-height: 1.5; } }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__first--h3 {
+        letter-spacing: 0; } }
   .content-section__first--input {
     font-size: 1.7rem; }
   .content-section__second--h2 {
@@ -39,6 +67,9 @@ h3 {
     letter-spacing: .1rem;
     text-transform: capitalize;
     text-decoration: none; }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__second--link, .content-section__second--link:link, .content-section__second--link:visited {
+        letter-spacing: 0; } }
   .content-section__second--link:hover {
     color: #FFF;
     text-decoration: underline; }
@@ -62,7 +93,11 @@ h3 {
   font-family: 'Lora', serif;
   outline: none;
   transition: all .3s;
+  background-color: transparent;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      padding: 2rem 2.5rem; } }
   .btn:hover {
     transform: translateY(-1rem);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
@@ -72,6 +107,10 @@ h3 {
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5); }
   .btn--submit {
     margin-right: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .btn--submit {
+        margin-right: 0;
+        margin-bottom: 3rem; } }
   .btn--lucky, .btn--lucky:link, .btn--lucky:visited {
     display: inline-block;
     text-transform: uppercase;
@@ -89,6 +128,9 @@ h3 {
 .content-section__first {
   padding: 3rem 2rem;
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .content-section__first {
+      padding: 3rem .5rem; } }
   .content-section__first--h3 {
     padding: 2rem;
     margin: 2rem auto; }
@@ -99,7 +141,10 @@ h3 {
     border-radius: 3px;
     border: 2px solid #000;
     outline: none;
-    transition: all .2s; }
+    transition: all .3s; }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__first--input {
+        width: 90%; } }
     .content-section__first--input:hover {
       background-color: rgba(235, 228, 192, 0.5);
       transform: scale(1.1);
@@ -110,15 +155,23 @@ h3 {
       box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
   .content-section__first--btns-container {
     padding: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__first--btns-container {
+        padding: 3rem 0; } }
 
 .content-section__second {
   padding: 1rem 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .content-section__second {
+      padding: 1rem .5rem; } }
   .content-section__second--result-container {
     padding: 0 2rem 5rem 2rem;
     border-left: 5px solid transparent;
-    transition: all .5s; }
-    .content-section__second--result-container:not(:last-child) {
-      margin-bottom: 5rem; }
+    transition: all .5s;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__second--result-container {
+        padding: 0 .5rem 5rem .5rem; } }
     .content-section__second--result-container:hover {
       border-left: 5px solid #AC2832;
       background-color: rgba(235, 228, 192, 0.5); }
@@ -127,6 +180,9 @@ h3 {
     border: 0.15rem solid #AC2832;
     margin: 0 auto;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 37.5em) {
+      .content-section__second--hr {
+        width: 60%; } }
   .content-section__second--h2 {
     display: inline-block;
     padding: 2rem;
@@ -147,11 +203,20 @@ h3 {
 .footer {
   padding: 5rem 10rem;
   background-color: #ebe4c0; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 5rem; } }
+  @media only screen and (max-width: 25.5em) {
+    .footer {
+      padding: 5rem .5rem; } }
   .footer__hr {
     width: 40%;
     margin: 0 auto;
     border: 1.5px solid #AC2832;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 37.5em) {
+      .footer__hr {
+        width: 60%; } }
   .footer__text {
     padding: 5rem; }
   .footer__link, .footer__link:link, .footer__link:visited {

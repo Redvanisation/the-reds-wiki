@@ -2,24 +2,25 @@
     display: inline-block;
     padding: 2rem 4rem;
     border-radius: .5rem;
-    // background-color: $color-secondary;
-    // color: $color-white;
     font-size: $global-font-size;
     text-transform: uppercase;
-    // font-weight: 500;
     letter-spacing: .5rem;
     cursor: pointer;
     border: 2px solid $color-black;
     font-family: 'Lora', serif;
     outline: none;
     transition: all .3s;
+    background-color: transparent;
     @include boxShadow;
+
+    @include respond(phone) {
+        padding: 2rem 2.5rem;
+    }
     
     &:hover {
         transform: translateY(-1rem);
         box-shadow: 0 1rem 3rem rgba($color-black, .5);
         background-color: $color-secondary-light;
-        // color: $color-white;
     }
     
     &:active {
@@ -31,13 +32,10 @@
     &--submit {
         
         margin-right: 5rem;
-
-        &:hover{
-
-        }
-
-        &:active {
-            
+        
+        @include respond(phone) {
+            margin-right: 0;
+            margin-bottom: 3rem;
         }
     }
 
@@ -53,13 +51,6 @@
             transition: all .3s;
             @include boxShadow;
             
-        }
-
-        &:hover {
-        }
-        
-        &:active {
-
         }
     }
 }
