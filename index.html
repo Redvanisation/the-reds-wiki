@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:400,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/main.comp.css">
 </head>
-<body>
+<body onload=init()>
 	<section class="container content-section">
 		<header class="box box-header content-section__header">
 			<h1 class="content-section__header--h1">
@@ -22,10 +22,19 @@
 
 			<input type="text" class="content-section__first--input" name="query-input" id="input" required>
 			
-			<button class="btn btn--submit" type="submit" id="btn-search">Search!</button>
-			<a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn--lucky" id="btn-lucky">Lucky?</a>
+			<div class="content-section__first--btns-container">
+				<button class="btn btn--submit" type="submit" id="btn-search">Search!</button>
+				<a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn--lucky" id="btn-lucky">Lucky?</a>
+
+			</div>
 		</section>
 		<main class="box box-two content-section__second" id="content-div">
+			<h2 class="content-section__second--h2">Result title</h2>
+			<p class="content-section__second--text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi recusandae possimus illo, qui quisquam blanditiis dolorum! Accusamus rem provident dolore eum natus, iste a ipsam reprehenderit voluptatibus quidem deserunt et.
+				<a href="#" class="content-section__second--link">Read more...</a>
+			</p>
+
 			<h2 class="content-section__second--h2">Result title</h2>
 			<p class="content-section__second--text">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi recusandae possimus illo, qui quisquam blanditiis dolorum! Accusamus rem provident dolore eum natus, iste a ipsam reprehenderit voluptatibus quidem deserunt et.

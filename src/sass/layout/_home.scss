@@ -1,43 +1,68 @@
 .content-section {
+    // border: 2px solid green;
+    // height: 100%;
 
     &__header {
-
-
-        &--h1 {
-
-        }
+        // border: 2px solid red;
+        padding: 2rem 1rem;
+        background-color: $color-primary;
     }
 
     &__first {
-
+        padding: 3rem 2rem;
 
         &--h3 {
-
+            padding: 2rem;
         }
 
         &--input {
+            padding: 2rem;
+            width: 60%;
+            border-radius: 3px;
+            border: 1px solid $color-black;
+            outline: none;
+            transition: all .2s;
+            // border: none;
+            // @include boxShadow;
 
+            &:hover {
+                background-color: rgba($color-secondary, .1);
+            }
+
+            &:focus {
+
+            }
+        }
+
+        &--btns-container {
+            padding: 3rem;
         }
 
 
     }
 
     &__second {
-
+        padding: 1rem 5rem;
 
         &--h2 {
-
+            display: inline-block;
+            padding: 2rem;
+            border-top: 2px solid $color-primary;
         }
 
         &--text {
-
+            display: inline-block;
+            padding: 2rem;
+            text-align: left;
         }
 
         &--link {
             &,
             &:link,
             &:visited {
-
+                display: inline-block;
+                padding: 3rem;
+                float: right;
             }
 
             &:hover {
@@ -52,14 +77,15 @@
 }
 
 .footer {
-
+    padding: 5rem 10rem;
 
     &__hr {
-
+        width: 60%;
+        margin: 0 auto;
     }
 
     &__text {
-
+        padding: 5rem;
     }
 
     &__link {

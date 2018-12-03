@@ -18,6 +18,82 @@ h2,
 h3 {
   font-family: 'Open Sans', sans-serif; }
 
+.content-section {
+  text-align: center; }
+  .content-section__header--h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    font-weight: 900;
+    color: #FFF; }
+  .content-section__first--h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+  .content-section__first--input {
+    font-size: 1.7rem; }
+
+.btn {
+  display: inline-block;
+  padding: 2rem 4rem;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .5rem;
+  cursor: pointer;
+  border: 1px solid #000; }
+  .btn--submit {
+    margin-right: 5rem; }
+  .btn--lucky, .btn--lucky:link, .btn--lucky:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000; }
+
+.content-section__header {
+  padding: 2rem 1rem;
+  background-color: #AC2832; }
+
+.content-section__first {
+  padding: 3rem 2rem; }
+  .content-section__first--h3 {
+    padding: 2rem; }
+  .content-section__first--input {
+    padding: 2rem;
+    width: 60%;
+    border-radius: 3px;
+    border: 1px solid #000;
+    outline: none;
+    transition: all .2s; }
+    .content-section__first--input:hover {
+      background-color: rgba(223, 210, 151, 0.1); }
+  .content-section__first--btns-container {
+    padding: 3rem; }
+
+.content-section__second {
+  padding: 1rem 5rem; }
+  .content-section__second--h2 {
+    display: inline-block;
+    padding: 2rem;
+    border-top: 2px solid #AC2832; }
+  .content-section__second--text {
+    display: inline-block;
+    padding: 2rem;
+    text-align: left; }
+  .content-section__second--link, .content-section__second--link:link, .content-section__second--link:visited {
+    display: inline-block;
+    padding: 3rem;
+    float: right; }
+
+.footer {
+  padding: 5rem 10rem; }
+  .footer__hr {
+    width: 60%;
+    margin: 0 auto; }
+  .footer__text {
+    padding: 5rem; }
+
 .container {
   display: flex;
   flex-wrap: wrap; }

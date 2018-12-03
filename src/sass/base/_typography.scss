@@ -10,11 +10,19 @@ h3 {
 }
 
 .content-section {
+    text-align: center;
 
     &__header {
-
-
+        
         &--h1 {
+            font-size: 7rem;
+            text-transform: uppercase;
+            letter-spacing: 2rem;
+            font-weight: 900;
+            color: $color-white;
+        }
+
+        &--h2 {
 
         }
     }
@@ -23,11 +31,13 @@ h3 {
 
 
         &--h3 {
-
+            font-weight: 600;
+            text-transform: capitalize;
+            @include textShadow;
         }
 
         &--input {
-
+            font-size: $global-font-size;
         }
 
 
