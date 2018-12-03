@@ -1,0 +1,20 @@
+// CENTRING:
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+// SHADOWS:
+
+@mixin textShadow {
+    text-shadow: 0 1rem 2rem rgba($color-black, .5);
+}
+
+@mixin boxShadow {
+    box-shadow: 0 1rem 2rem rgba($color-black, .5);
+}

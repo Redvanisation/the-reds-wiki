@@ -1,0 +1,81 @@
+.content-section {
+
+    &__header {
+
+
+        &--h1 {
+
+        }
+    }
+
+    &__first {
+
+
+        &--h3 {
+
+        }
+
+        &--input {
+
+        }
+
+
+    }
+
+    &__second {
+
+
+        &--h2 {
+
+        }
+
+        &--text {
+
+        }
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+
+            }
+
+            &:hover {
+
+            }
+
+            &:active {
+
+            }
+        }
+    }
+}
+
+.footer {
+
+
+    &__hr {
+
+    }
+
+    &__text {
+
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+
+        }
+
+        &:hover {
+
+        }
+
+        &:active {
+            
+        }
+
+    }
+}

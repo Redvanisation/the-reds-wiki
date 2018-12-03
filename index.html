@@ -2,29 +2,58 @@
 <html>
 <head>
 	<meta charset="UTF-8" >
-	<meta name="viewport" content="width=device-width, initial-scare=1.0">    
-	<title>Second Wiki!</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+	<title>Red's Wiki</title>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/main.comp.css">
 </head>
 <body>
-	<header>
-		<h1>Second Wiki!</h1>
-		<h3>Based on Wikipedia</h3>
-	</header>
-	<main>
-		<input type="text" placeholder="Enter you query" name="query-input" id="input">
-		<button type="submit" class="btns" id="search-btn"><i class="fas fa-search icon"></i> Search</button>
-		<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button class="btns" id="lucky-btn">Lucky?</button></a>
-		<div id="search-content">
-		</div>
-	</main>
-	<footer>
-		<hr>
-		<p>Made by <a href="https://github.com/Redvanisation" target="_blank">Redvanisation</a> 2018</p>
-	</footer>
+	<section class="container content-section">
+		<header class="box box-header content-section__header">
+			<h1 class="content-section__header--h1">
+				The Red's Wiki!
+			</h1>
+		</header>
+		<section class="box box-one content-section__first">
+			<h3 class="content-section__first--h3">
+				Please use the input below for search or click the lucky button to read about a random topic
+			</h3>
+
+			<input type="text" class="content-section__first--input" name="query-input" id="input" required>
+			
+			<button class="btn btn--submit" type="submit" id="btn-search">Search!</button>
+			<a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn--lucky" id="btn-lucky">Lucky?</a>
+		</section>
+		<main class="box box-two content-section__second" id="content-div">
+			<h2 class="content-section__second--h2">Result title</h2>
+			<p class="content-section__second--text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi recusandae possimus illo, qui quisquam blanditiis dolorum! Accusamus rem provident dolore eum natus, iste a ipsam reprehenderit voluptatibus quidem deserunt et.
+			</p>
+			<a href="#" class="content-section__second--link">Read more...</a>
+		</main>
+		<footer class="box box-three footer">
+			<hr class=footer__hr>
+			<div class="footer__text">Made by 
+				<a href="https://github.com/Redvanisation" target="_blank" class="footer__link">Redvanisation</a> 
+				2018
+			</div>
+		</footer>
+
+		<!--
+		<main>
+			<input type="text" placeholder="Enter you query" name="query-input" id="input">
+			<button type="submit" class="btns" id="search-btn"><i class="fas fa-search icon"></i> Search</button>
+			<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button class="btns" id="lucky-btn">Lucky?</button></a>
+			<div id="search-content">
+			</div>
+		</main>
+		<footer>
+			<hr>
+			<p>Made by <a href="https://github.com/Redvanisation" target="_blank">Redvanisation</a> 2018</p>
+		</footer> -->
+
+	</section>
+	<script rel="text/javascript" src="src/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Lora', serif;
+    font-size: $global-font-size;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-section {
+
+    &__header {
+
+
+        &--h1 {
+
+        }
+    }
+
+    &__first {
+
+
+        &--h3 {
+
+        }
+
+        &--input {
+
+        }
+
+
+    }
+
+    &__second {
+
+
+        &--h2 {
+
+        }
+
+        &--text {
+
+        }
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+
+            }
+
+            &:hover {
+
+            }
+        }
+    }
+}
+
+.footer {
+
+
+    &__text {
+
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+
+        }
+
+        &:hover {
+
+        }
+
+    }
+}
