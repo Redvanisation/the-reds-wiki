@@ -1,35 +1,39 @@
 .content-section {
-    // border: 2px solid green;
-    // height: 100%;
 
     &__header {
-        // border: 2px solid red;
-        padding: 2rem 1rem;
+        padding: 5rem 1rem;
         background-color: $color-primary;
+        @include boxShadow;
     }
 
     &__first {
         padding: 3rem 2rem;
+        margin-bottom: 5rem;
 
         &--h3 {
             padding: 2rem;
+            margin: 2rem auto;
         }
 
         &--input {
+            margin: 3rem auto;
             padding: 2rem;
             width: 60%;
             border-radius: 3px;
-            border: 1px solid $color-black;
+            border: 2px solid $color-black;
             outline: none;
             transition: all .2s;
-            // border: none;
-            // @include boxShadow;
-
+            
             &:hover {
-                background-color: rgba($color-secondary, .1);
+                background-color: rgba($color-secondary-light, .5);
+                transform: scale(1.1);
+                @include boxShadow;
             }
-
+            
             &:focus {
+                background-color: rgba($color-secondary-light, .5);
+                transform: scale(1.1);
+                @include boxShadow;
 
             }
         }
@@ -45,7 +49,7 @@
         padding: 1rem 5rem;
         
         &--result-container {
-            padding: 0 2rem 2rem 2rem;
+            padding: 0 2rem 5rem 2rem;
             border-left: 5px solid transparent;
             transition: all .5s;
             
@@ -55,6 +59,7 @@
             
             &:hover {
                 border-left: 5px solid $color-primary;
+                background-color: rgba($color-secondary-light, .5);
             }
         }
 
@@ -62,6 +67,7 @@
             width: 40%;
             border: .15rem solid $color-primary;
             margin: 0 auto;
+            @include boxShadow;
         }
         
         &--h2 {
@@ -83,14 +89,12 @@
                 display: inline-block;
                 margin: 3rem;
                 float: right;
+                padding: 1rem;
+                transition: all .3s; 
             }
 
             &:hover {
-
-            }
-
-            &:active {
-
+                background-color: $color-primary;
             }
         }
     }
@@ -98,10 +102,13 @@
 
 .footer {
     padding: 5rem 10rem;
+    background-color: $color-secondary-light;
 
     &__hr {
-        width: 60%;
+        width: 40%;
         margin: 0 auto;
+        border: 1.5px solid $color-primary;
+        @include boxShadow;
     }
 
     &__text {
@@ -112,15 +119,13 @@
         &,
         &:link,
         &:visited {
-
+            display: inline-block;
+            transition: all .3s;
         }
 
         &:hover {
-
-        }
-
-        &:active {
-            
+            transform: rotate(5deg) scale(1.05);
+            @include textShadow;
         }
 
     }

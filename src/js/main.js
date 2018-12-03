@@ -27,15 +27,24 @@ const init = () => {
 
             // LOOPING THROUGH THE RESULTS AND SHOWING EACH PIECE ON ITS RELATED HTML TAG:
             for (let i in resp) {
-                content.innerHTML += `
-                <div class="content-section__second--result-container">
-                    <hr class="content-section__second--hr">
-                    <h2 class="content-section__second--h2">${resp[1][i]}</h2>
-                    <p class="content-section__second--text">
-                    ${resp[2][i]}
-                    <a href="${resp[3][i]}" class="content-section__second--link" target="_blank">Read more...</a>
-                    </p>
-                </div>`;
+
+                // CHECKING IF THE SEARCH QUERY IS CORRECT THEN SHOW THE RESULT IF NOT THEN SHOW AN ERROR MESSAGE:
+                if (resp[1][i] != undefined) {
+                    content.innerHTML += `
+                    <div class="content-section__second--result-container">
+                        <hr class="content-section__second--hr">
+                        <h2 class="content-section__second--h2">${resp[1][i]}</h2>
+                        <p class="content-section__second--text">
+                        ${resp[2][i]}
+                        <a href="${resp[3][i]}" class="content-section__second--link" target="_blank">Read more...</a>
+                        </p>
+                    </div>`;
+                } else {
+                    content.innerHTML = `
+                        <hr class="content-section__second--hr">
+                        <h2 class="content-section__second--h2">Please Enter a Valid Search Query</h2>
+                `;
+                }
             }
         })
         .catch((err) => console.log(err));

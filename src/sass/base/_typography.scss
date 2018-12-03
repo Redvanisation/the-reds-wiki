@@ -33,7 +33,7 @@ h3 {
         &--h3 {
             font-weight: 600;
             text-transform: capitalize;
-            @include textShadow;
+            // @include textShadow;
         }
 
         &--input {
@@ -47,22 +47,23 @@ h3 {
 
 
         &--h2 {
-
-        }
-
-        &--text {
-
+            text-transform: capitalize;
         }
 
         &--link {
             &,
             &:link,
             &:visited {
-
+                color: $color-primary;
+                font-weight: 700;
+                letter-spacing: .1rem;
+                text-transform: capitalize;
+                text-decoration: none;
             }
 
             &:hover {
-
+                color: $color-white;
+                text-decoration: underline;
             }
         }
     }
@@ -79,7 +80,11 @@ h3 {
         &,
         &:link,
         &:visited {
-
+            color: $color-primary;
+            font-weight: 500;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            text-decoration: none;
         }
 
         &:hover {
