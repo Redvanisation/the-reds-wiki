@@ -43,15 +43,35 @@
 
     &__second {
         padding: 1rem 5rem;
+        
+        &--result-container {
+            padding: 0 2rem 2rem 2rem;
+            border-left: 5px solid transparent;
+            transition: all .5s;
+            
+            &:not(:last-child) {
+                margin-bottom: 5rem;   
+            }
+            
+            &:hover {
+                border-left: 5px solid $color-primary;
+            }
+        }
 
+        &--hr {
+            width: 40%;
+            border: .15rem solid $color-primary;
+            margin: 0 auto;
+        }
+        
         &--h2 {
             display: inline-block;
             padding: 2rem;
-            border-top: 2px solid $color-primary;
+            padding-top: 4rem;
         }
 
         &--text {
-            display: inline-block;
+            display: block;
             padding: 2rem;
             text-align: left;
         }
@@ -61,7 +81,7 @@
             &:link,
             &:visited {
                 display: inline-block;
-                padding: 3rem;
+                margin: 3rem;
                 float: right;
             }
 
