@@ -82,7 +82,7 @@ h3 {
 
                 @include respond(phone) {
                     letter-spacing: 0;
-                        
+
                 }
             }
 
@@ -95,6 +95,8 @@ h3 {
 }
 
 .footer {
+
+    font-family: 'Open Sans', sans-serif;
 
     &__link {
         &,
